@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyText
+  lattitude: 9.99
+  longitude: 9.99
+  paper: MyText
+  plastic: MyText
+  metal: MyText
+  glass: MyText
+
+two:
+  name: MyString
+  address: MyText
+  lattitude: 9.99
+  longitude: 9.99
+  paper: MyText
+  plastic: MyText
+  metal: MyText
+  glass: MyText

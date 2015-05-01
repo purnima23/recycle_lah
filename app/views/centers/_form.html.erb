@@ -1,0 +1,49 @@
+<%= form_for(@center) do |f| %>
+  <% if @center.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@center.errors.count, "error") %> prohibited this center from being saved:</h2>
+
+      <ul>
+      <% @center.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </div>
+  <div class="field">
+    <%= f.label :lattitude %><br>
+    <%= f.text_field :lattitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :paper %><br>
+    <%= f.text_area :paper %>
+  </div>
+  <div class="field">
+    <%= f.label :plastic %><br>
+    <%= f.text_area :plastic %>
+  </div>
+  <div class="field">
+    <%= f.label :metal %><br>
+    <%= f.text_area :metal %>
+  </div>
+  <div class="field">
+    <%= f.label :glass %><br>
+    <%= f.text_area :glass %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
